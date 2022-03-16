@@ -1,13 +1,20 @@
-#include <unistd.h>
-#include "main.h"                                                                                                       /**                                                                                                                     *_putchar - writes the character c
-* @c: The character to print
-*Return: 0														
-*/
+#include "main.h"
+/**
+ *  * main - entry block
+ *   * @void: no argument
+ *    * Return: 0
+ *     **/
 int main(void)
 {
-	_putchar("_putchar");
-}
-int _putchar(char c)
-{
-	return (write(c));
+	char ermias[] = "_putchar";
+
+	int c;
+
+	for (c = 0; c < 7; c++)
+		for (c = 0; c < 8; c++)
+		{
+			_putchar(ermias[c]);
+		}
+	_putchar('\n');
+	return (0);
 }
